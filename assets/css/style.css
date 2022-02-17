@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0px 7%;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#fff;
+}
+
+header .logo span{
+    color:#ff9f1a;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    color: #ff9f1a;
+    background: #fff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #333;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1164px){
+
+    header{
+       padding: 20px; 
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        border-top: 1px solid rgba(0,0,0,1);
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #333;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
