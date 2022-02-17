@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 *{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -11,11 +16,103 @@
     text-decoration: none;
 }
 
-body{
+.btn{
+    cursor: pointer;
+    border:.2rem solid #ff9f1a;
+    color: #ff9f1a;
+    background:none;
+    padding:.5rem 3rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 0;
+    font-size: 2rem;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    height:100%;
+    width:100%;
+    background: #ff9f1a;
+    z-index: -1;
+    clip-path: circle(0% at 0% 0%);
+    transition: .3s;
+}
+
+.btn:hover::before{
+    clip-path: circle(100%);
+}
+
+.btn:hover{
+    color:#fff;
+}
+
+.home{
     min-height: 100vh;
     background: url(../images/home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.home h1{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem #000;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.home .btn{
+    box-shadow: 0 .3rem .5rem #000;
+    color:#fff;
+}
+   
+.about .row{
+    min-height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    margin: 2rem 8rem;
+}
+
+.about .row .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    width: 90vw;
+}
+
+.about .row .content h1{
+    color: #ff9f1a;
+    font-size: 4rem;
+    margin: 3rem 0;
+}
+
+.about .row .content p{
+    color: #666;
+    font-size: 2rem;
+    padding-right: 6rem;
 }
 
 header{
@@ -31,12 +128,17 @@ header{
 }
 
 header .logo{
-    font-size: 3rem;
-    color:#fff;
+    font-size: 4rem;
+    color: #fff;
 }
 
 header .logo span{
-    color:#ff9f1a;
+    color: #ff9f1a;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: #ff9f1a;
 }
 
 header .navbar ul{
@@ -93,9 +195,11 @@ header label{
 
 
 
-
-
 @media(max-width: 1164px){
+
+    html{
+        font-size: 50%;
+    }
 
     header{
        padding: 20px; 
@@ -129,5 +233,9 @@ header label{
 
     #menu-bar:checked ~ .navbar{
         display: initial;
+    }
+
+    .home h1{
+        font-size: 5rem;
     }
 }
