@@ -50,7 +50,7 @@ html{
 
 .home{
     min-height: 100vh;
-    background: url(../images/home.jpg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -74,45 +74,15 @@ html{
     box-shadow: 0 .3rem .5rem #000;
     color:#fff;
 }
-   
-.about .row{
-    min-height: auto;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+.heading{
+    display: inline-block;
+    color: #333;
+    margin:2rem 0;
+    padding:1rem 0;
     padding-top: 8rem;
-}
-
-.about .row .image{
-    flex: 1 1 40rem;
-    padding: 2rem;
-    margin: 2rem 8rem;
-}
-
-.about .row .image img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-.about .row .content{
-    flex: 1 1 40rem;
-    padding: 2rem;
-    width: 90vw;
-}
-
-.about .row .content h1{
-    color: #ff9f1a;
-    font-size: 4rem;
-    margin: 3rem 0;
-}
-
-.about .row .content p{
-    color: #666;
-    font-size: 2rem;
-    padding-right: 6rem;
+    font-size: 3rem;
+    border-bottom: .2rem solid #ff9f1a;
 }
 
 header{
@@ -143,99 +113,486 @@ header .navbar ul li a:hover{
 
 header .navbar ul{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .navbar ul li{
-    position: relative;
-    float: left;
+   margin: 0 1rem;
 }
 
 header .navbar ul li a{
     color: #fff;
-    font-size: 20px;
-    padding: 20px;
-    display: block;
+    font-size: 2rem;
 }
 
-header .navbar ul li a:hover{
+header #menu{
+    font-size: 3rem;
     color: #ff9f1a;
-    background: #fff;
-}
-
-header .navbar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background: #333;
-    display: none;
-}
-
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,1);
-}
-
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
-    display: initial;
-}
-#menu-bar{
-    display: none;
-}
-
-header label{
-    font-size: 20px;
-    color: #fff;
     cursor: pointer;
     display: none;
 }
 
+#about{
+    height: 600px;
+}
+
+#left-about{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+#welcome {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 280%;
+    text-transform: uppercase;
+}
+
+#cover-bg {
+    background: url(../images/img11.jpg) no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.service{
+    min-height: 100vh;
+    text-align: center;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 23rem;
+    width: 45rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.service .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.service .box-container .box .info{
+    height:90%;
+    width:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.service .box-container .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.service .box-container .box .info h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.service .box-container .box .info p{
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem 2rem;
+}
+
+.trainer{
+    min-height: 100vh;
+    text-align: center;
+    background: #333;
+}
+
+.trainer .heading{
+    color: #fff;
+}
+
+.trainer .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trainer .box-container .box{
+    height:40rem;
+    margin: 1.5rem 1rem;
+    width: 27rem;
+    border: .5rem solid #ff9f1a;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.trainer .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .box-container .box .info{
+    color: #333;
+    background: #fff;
+    border-top: .5rem solid #ff9f1a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.trainer .box-container .box .share{
+    position: absolute;
+    top:1rem; right: -100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.trainer .box-container .box:hover .share{
+    right: 0;
+}
+
+.trainer .box-container .box .share a{
+    height: 4rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    color: #333;
+    font-size: 2rem;
+    background: #fff;
+    margin: .5rem 1rem;
+}
+
+.trainer .box-container .box .share a:hover{
+    background: #ff9f1a;
+    color: #fff;
+}
+
+.plan{
+    min-height: 100vh;
+    text-align: center;
+    background: #eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+    background: #fff;
+    margin: 2rem;
+    width: 30rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.plan .box-container .box:hover{
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title{
+    font-size: 2.5rem;
+    background: #ff9f1a;
+    color: #fff;
+    padding :1rem 0;
+}
+
+.plan .box-container .box .price{
+    font-size: 4rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.plan .box-container .box .price span{
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month{
+    font-size: 2rem;
+    color: #666;
+}
+
+.plan .box-container .box ul{
+    margin: 2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li{
+    text-align: left;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.plan .box-container .box ul li i{
+    color: #ff9f1a;
+    padding: 0 .5rem;
+}
+
+.plan .box-container .box .btn{
+    margin-bottom: 3rem;
+}
+
+.register{
+    min-height: 90vh;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/img13.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+.register .heading{
+    color:#fff;
+}
+
+.register form{
+    width:75%;
+    margin:0 auto;
+}
+
+.register form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register form .inputBox input, textarea{
+    height:4rem;
+    width: 49%;
+    background: #333;
+    color: #fff;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: .2rem solid #ff9f1a;
+}
+
+.register form .inputBox input:focus, textarea:focus{
+    background: #333;
+}
+
+.register form textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.register form .btn:hover{
+    background: #ff9f1a;
+}
+
+.footer{
+    color: #eee;
+    background: #111;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.footer a{
+    color: #ff9f1a;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+
+footer{
+    height: 150px;
+}
+
+.social-networks{
+    text-align: center;
+
+}
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #ff9f1a;
+}
 
 
 
 
+
+/* media queries */
 
 @media(max-width: 1164px){
 
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
 
-    header{
-       padding: 20px; 
-    }
-
-    header label{
-        display: initial;
+    header #menu{
+        display: block;
     }
 
     header .navbar{
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 100rem;
         left: 0;
-        right: 0;
-        background: #333;
-        border-top: 1px solid rgba(0,0,0,1);
+        width: 100%;
+        opacity: 0;
+        background: #fff;
+        bottom: .1rem solid rgba(0,0,0,3);
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
     }
 
     header .navbar ul li{
         width: 100%;
+        margin: 1rem 0;
+        text-align: center;
     }
 
-    header .navbar ul li ul{
-        position: relative;
-        width: 100%;
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        color: #333;
+        display: block;
     }
 
-    header .navbar ul li ul li{
-        background: #333;
-    }
-
-    #menu-bar:checked ~ .navbar{
-        display: initial;
+    header .navbar.nav-toggle{
+        top:8rem;
+        opacity: 1;
     }
 
     .home h1{
         font-size: 5rem;
     }
 }
+
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #about{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    #left-about, #right-about {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+    #center-about{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    #about{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p{
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
