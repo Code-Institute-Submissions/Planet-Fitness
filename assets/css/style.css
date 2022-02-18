@@ -497,7 +497,8 @@ footer{
 
 /* media queries */
 
-@media(max-width: 1164px){
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
 
     html{
         font-size: 55%;
@@ -542,10 +543,7 @@ footer{
     .home h1{
         font-size: 5rem;
     }
-}
 
-/* For large to medium screens sizes from 1200px wide and down */
-@media screen and (max-width: 1200px){
     #about{
         width: 65%;
         height: 1200px;
@@ -563,19 +561,28 @@ footer{
         padding: 0;
     }
 
-    #center-about{
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
     hr {
         display: none;
     }
 
+    .register form{
+        width:90%;
+    }
+
     /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home h1{
+        font-size: 5rem;
+    }
+
+    .register form .inputBox input{
+        width:100%;
+    }
 
     #about{
         width:90%;
