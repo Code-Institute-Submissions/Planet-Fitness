@@ -59,6 +59,18 @@ html{
     justify-content: center;
     flex-flow: column;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
 .home h1{
@@ -150,11 +162,6 @@ header #menu{
     float: right;
 }
 
-#center-about {
-    width: 33%;
-    margin: 0 auto;
-}
-
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
@@ -196,18 +203,6 @@ hr {
     background: url(../images/img11.jpg) no-repeat center center;
     height: 100%;
     border-radius: 50%;
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.1);
-    }
 }
 
 .service{
@@ -402,6 +397,36 @@ hr {
 
 .plan .box-container .box .btn{
     margin-bottom: 3rem;
+}
+
+.openinghours{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.openinghourscontent{
+    float: left;
+}
+
+.openinghourscontent h2{
+    display: block;
+    text-align: center;
+    font-size: 200%;
+}
+
+.opening-hours-table tr td:first-child{
+    font-weight: bold;
+}
+
+.opening-hours-table tr td{
+    padding: 10px;
+    font-size: 150%;
+    
 }
 
 .register{
