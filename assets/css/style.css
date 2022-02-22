@@ -188,23 +188,55 @@ hr {
     text-align: right;
 }
 
-.right-about-heading h2 {
+.right-about-heading h2{
     text-align: right;
 }
 
-#welcome {
-    margin: 30px 0;
+#welcome{
+    margin: 30px;
     text-align: center;
     font-size: 280%;
     text-transform: uppercase;
+    margin-top: 100px;
 }
 
-#cover-bg {
+#cover-bg{
     background: url(../images/img11.jpg) no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
+.openinghours{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.openinghourscontent{
+    float: left;
+}
+
+.openinghourscontent h2{
+    display: block;
+    text-align: center;
+    font-size: 200%;
+}
+
+.opening-hours-table tr td:first-child{
+    font-weight: bold;
+}
+
+.opening-hours-table tr td{
+    padding: 10px;
+    font-size: 150%;
+    
+}
+    
 .service{
     min-height: 100vh;
     text-align: center;
@@ -397,36 +429,6 @@ hr {
 
 .plan .box-container .box .btn{
     margin-bottom: 3rem;
-}
-
-.openinghours{
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 4px;
-    margin: 10px;
-    box-shadow: 0 0 10px black;
-    padding: 10px 10px 10px 10px;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.openinghourscontent{
-    float: left;
-}
-
-.openinghourscontent h2{
-    display: block;
-    text-align: center;
-    font-size: 200%;
-}
-
-.opening-hours-table tr td:first-child{
-    font-weight: bold;
-}
-
-.opening-hours-table tr td{
-    padding: 10px;
-    font-size: 150%;
-    
 }
 
 .register{
