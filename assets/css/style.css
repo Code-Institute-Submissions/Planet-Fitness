@@ -219,12 +219,11 @@ hr {
 }
 
 .openinghourscontent{
-    float: left;
+    text-align: center;
 }
 
 .openinghourscontent h2{
     display: block;
-    text-align: center;
     font-size: 200%;
 }
 
