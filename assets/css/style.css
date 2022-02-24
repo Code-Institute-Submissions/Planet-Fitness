@@ -603,10 +603,6 @@ footer{
         font-size: 50%;
     }
 
-    .home h1{
-        font-size: 5rem;
-    }
-
     .register form .inputBox input{
         width:100%;
     }
@@ -614,7 +610,7 @@ footer{
     #about{
         width:90%;
         height: 1200px;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 
     .left-about-heading, .right-about-heading{
@@ -629,4 +625,8 @@ footer{
     .left-about-heading p, .right-about-heading p{
         text-align: center;
         padding: 0 20px 0 20px;
+    }
+
+    .trainer .box-container .box .share{
+        right: 0;
     }
