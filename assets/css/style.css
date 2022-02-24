@@ -90,8 +90,8 @@ html{
 .heading{
     display: inline-block;
     color: #333;
-    margin:2rem 0;
-    padding:1rem 0;
+    margin: 2rem 0;
+    padding: 1rem 0;
     padding-top: 8rem;
     font-size: 3rem;
     border-bottom: .2rem solid #ff9f1a;
@@ -107,6 +107,7 @@ header{
     left: 0;
     z-index: 1000;
     padding: 0px 7%;
+    background-color: #333;
 }
 
 header .logo{
