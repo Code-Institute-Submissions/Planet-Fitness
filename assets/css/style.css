@@ -206,35 +206,6 @@ hr {
     height: 100%;
     border-radius: 50%;
 }
-
-.openinghours{
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 4px;
-    margin: 150px;
-    box-shadow: 0 0 10px black;
-    padding: 10px 10px 10px 10px;
-    overflow: hidden;
-    display: inline-block;
-    margin-bottom: 60px;
-}
-
-.openinghourscontent{
-    text-align: center;
-}
-
-.openinghourscontent h2{
-    display: block;
-    font-size: 200%;
-}
-
-.opening-hours-table tr td:first-child{
-    font-weight: bold;
-}
-
-.opening-hours-table tr td{
-    padding: 10px;
-    font-size: 150%;    
-}
     
 .service{
     min-height: 100vh;
@@ -576,29 +547,26 @@ footer{
         margin: 0 auto;
     }
 
-    #welcome {
+    #welcome{
         padding: 30px 0;
         margin-top: 0;
     }
 
-    #left-about, #right-about {
+    #left-about, #right-about{
         width:100%;
         float:left;
         padding: 0;
     }
 
-    hr {
+    hr{
         display: none;
     }
 
     .register form{
         width:90%;
     }
-
-    .image{
-        display: none;
-    }
-
+}
+   
     /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
 
@@ -633,3 +601,4 @@ footer{
     .trainer .box-container .box .share{
         right: 0;
     }
+}
