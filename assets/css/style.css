@@ -131,11 +131,20 @@ header .logo span{
     padding: 0;
   }
   
-  .menu > li {
+  .menu > li{
     margin: 0 1rem;
   }
+
+  .menu > li a{
+      color: #fff;
+      font-size: 2rem;
+  }
+
+  .menu > li a:hover{
+      color: #ff9f1a;
+  }
   
-  .menu-button-container {
+  .menu-button-container{
     display: none;
     height: 100%;
     width: 30px;
@@ -145,13 +154,13 @@ header .logo span{
     align-items: center;
   }
   
-  #menu-toggle {
+  #menu-toggle{
     display: none;
   }
   
   .menu-button,
   .menu-button::before,
-  .menu-button::after {
+  .menu-button::after{
     display: block;
     background-color: #fff;
     position: absolute;
@@ -161,12 +170,12 @@ header .logo span{
     border-radius: 2px;
   }
   
-  .menu-button::before {
+  .menu-button::before{
     content: '';
     margin-top: -8px;
   }
   
-  .menu-button::after {
+  .menu-button::after{
     content: '';
     margin-top: 8px;
   }
@@ -189,6 +198,7 @@ header .logo span{
     .menu-button-container {
       display: flex;
     }
+
     .menu {
       position: absolute;
       top: 0;
