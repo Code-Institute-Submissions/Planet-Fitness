@@ -1,33 +1,18 @@
 # Planet Fitness
 
-## Author
-
-YARI CARELLI
-
-## Live Site
-
-[Planet Fitness](https://8000-yaricarelli-planetfitnes-9w5islkvwx7.ws-eu34xl.gitpod.io/)
-
-## Repository
-
-[https://github.com/Yari-Carelli/planet-foritness-portfolio-project-1](https://github.com/Yari-Carelli/planet-fitness-portfolio-project-1)
-***
-
 
 ## Objective
 
 Planet Fitness is a front-end project for a responsive Gym website using HTML and CSS, experimenting with new fonts and styles. 
 The website was designed to be simple and non fussy, it uses a one-page format, which makes it especially easy to navigate on mobile. An efficient and non fussy website will attract new menbers who would otherwise timeout trying to navigate a complicated website.
 In this project I aim at showcasing my ability in HTML and CSS by developing a website which is visually pleasing and informative with intuitive navigation and a clear layout. 
-![Responsive](assets/images/readme12.png)![Responsive](assets/images/readme13.png)
-***
-
-## Project Goals
 
 Most Gym users are researching classes and availability during a busy day at work. They want instant access to information with little clicking and scrolling. This website has clear sections providing general information about what the gym offers to its members, from multiple gruop classes to a variety of professional equipment. Most Gym Website users are already attending a gym and just want to know some basic details.
 The gym is interested in attracting and retaining members: the site's users are potential members, who want to know more about the gym and its procedures.
 The different sections of the website provide welcoming images of the Gym.
 The website promotes the image of a professional well run Gym.
+![Responsive](assets/images/readme12.png)![Responsive](assets/images/readme13.png)
+
 ***
 
 ## UX User Experience Design
@@ -46,7 +31,7 @@ The website promotes the image of a professional well run Gym.
 
 #### Colours
 
-I used a combination of contrasting colours so that the text and images would stand out clearly against the background. I used dark colours, such as black and dark grey, for most of the sections' backgrounds and white and orange for details, such as borders and text.
+I used a combination of contrasting colours so that the text and images would stand out clearly against the background. I used dark colours, such as #000 and #333, for most of the sections' backgrounds and #fff and #ff9f1a for details, such as borders and text.
 I used the colour picker to choose the hover colour on the button for the contact form. I wanted the colour to compliment the images I used for the different sections.
 ![Colours](assets/images/readme9.png)
 
@@ -106,8 +91,6 @@ I liked the idea of having a background image which was fairly muted in terms of
 2. [HTML Validator with Free Formatter](https://www.freeformatter.com/html-validator.html)
    
 
-For thouroughness sake, I also used the [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) following the use of the above two validators.
-
 ### Cross Browser and Cross Device Testing
 
 I have loaded the website in Chrome, Safari and Firefox. Each browser displayed the site as I designed it to, and the responsive design is functioning as I intended.
@@ -116,15 +99,16 @@ I have inputted various formats of data into the form on the contact page, and t
 I've tested all the anchor elements for external links and ensured they open in a new browser tab.  I've also tested the internal anchor elements and ensured they go to the relevant pages within the site.
 I've manually tested the user requirements as outlined in [Overall User Experience](#Overall-User-Experience).
 I've ran my site through Lighthouse's audit [Web Dev](https://web.dev.measure/) and the results are below:
+![Lighthouse](assets/images/img16.png)
 
 ### Bugs
 
 
 ### Accessibility
 
-I ran my site through [Web Accessibility](https://www.webaccessibility.com/) and here are the results, showing all okay:
+I ran my site through [Web Accessibility](https://www.webaccessibility.com/) showing all okay.
 
-I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluation tool and the results are as follows, showing all okay:
+I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluation tool and it is showing all okay.
 ***
 
 ## Deployment
@@ -132,7 +116,13 @@ I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluat
 
 ***
 
-## Technologies Used
+## Languages 
+
+1. HTML
+
+2. CSS
+
+## Tools
 
 1. [Font Awesome](https://fontawesome.com/)
     
@@ -153,11 +143,6 @@ I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluat
 9. [Wave](https://wave.webaim.org/)
     
 10. [W3C Markup Validation Service](validator.w3.org)
-    
-11. [CSS Validator](https://www.cssportal.com/css-validator/)
-
-12. [HTML Validator](https://www.freeformatter.com/html-validator.html)
-
 ***
 
 ## Credits

@@ -201,13 +201,27 @@ header .logo span{
     .menu {
       position: absolute;
       top: 0;
+      margin-top: -250px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #menu-toggle:checked ~ .menu{
+        position: absolute;
+      top: 0;
       margin-top: 50px;
       left: 0;
       flex-direction: column;
       width: 100%;
       justify-content: center;
       align-items: center;
+      z-index: 999;
     }
+
     #menu-toggle ~ .menu li {
       height: 0;
       margin: 0;
@@ -334,6 +348,44 @@ header .logo span{
     color: #666;
     padding: 1rem 2rem;
 }
+
+#customers {
+    font-family: "Raleway", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  #customers td, #customers th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  #customers tr:nth-child(even){
+      background-color: #f2f2f2;
+  }
+  
+  #customers tr:hover{
+      background-color: #ddd;
+  }
+  
+  #customers th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    color: white;
+  }
+
+  .title{
+      text-align: center;
+      margin-top: 100px;
+      font-size: 3rem;
+  }
+
 
 .trainer{
     min-height: 100vh;
