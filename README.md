@@ -19,6 +19,7 @@ YARI CARELLI
 Planet Fitness is a front-end project for a responsive Gym website using HTML and CSS, experimenting with new fonts and styles. 
 The website was designed to be simple and non fussy, it uses a one-page format, which makes it especially easy to navigate on mobile. An efficient and non fussy website will attract new menbers who would otherwise timeout trying to navigate a complicated website.
 In this project I aim at showcasing my ability in HTML and CSS by developing a website which is visually pleasing and informative with intuitive navigation and a clear layout. 
+![Responsive](assets/images/readme12.png)![Responsive](assets/images/readme13.png)
 ***
 
 ## Project Goals
@@ -46,7 +47,8 @@ The website promotes the image of a professional well run Gym.
 #### Colours
 
 I used a combination of contrasting colours so that the text and images would stand out clearly against the background. I used dark colours, such as black and dark grey, for most of the sections' backgrounds and white and orange for details, such as borders and text.
-I used the colour picker to choose the hover colour on the button for the contact form. I wanted the colour to compliment the images on the services and trainers sections.
+I used the colour picker to choose the hover colour on the button for the contact form. I wanted the colour to compliment the images I used for the different sections.
+![Colours](assets/images/readme9.png)
 
 #### Typography
 
@@ -65,26 +67,33 @@ It was important to me that the site didn't become too cumbersome, so most of th
 Finally, when navigating the website on a mobile phone, at a certain screen width, the menu items disappear and turn into a clickable hamburger menu, which turns orange when hovered on as well.
 Multiple identical hover effects are added throughout the website, for example in both the services and trainers section.
 All the pictures have a responsive design for smaller screen sizes, ultimately placing them one on top of another other, which gives a cleaner layout than having the picture next to each other.
+![Hover](assets/images/readme5.png)![Hover](assets/images/readme6.png)![Hover](assets/images/readme7.png)![Hover](assets/images/readme8.png)
+![Menu](assets/images/readme10.png)![Menu](assets/images/readme11.png)
 
 ### Features
 
 #### Home section
 
 I used the Raleway font to add to the strong and clean feel of the site. I wanted an image behind the text to aid visual impact and chose a quite neutral image in terms of colour, as it is almost entirley black. I want the text to be wide and brief so that it did not overlay the image too much, leaving it clearly visible behind it. I had originally started with a different image but the colours were too colorful and made both the header and the text not prominent enough, detracting from the overall look I was going for.I wanted to make this concisive, with an image that is relevant to the title of the site. I added the zoom-in of the image and the text fade-in to make it more engaging.
+![Home section](assets/images/readme1.png)
 
 #### Footer section
 
 I made the footer really simple, with a plain black background and orange clickable icons in contrast so as to be clear this was less important than the header and content of the website. I added a Facebook, Twitter, Instagram and Youtube link to each of the correspondent icon.
-Above the footer I embedded a google maps, which is set of course to a random location, so the user can easily figure out where the gym is sited. 
+Above the footer I embedded a google maps, which is set of course to a random location, so the user can easily figure out where the gym is sited. I also added a box on the top right of the map containing the gym's phone number and hours of operation and decorated each voice with an icon.
+![Footer section](assets/images/readme3.png)
+![Map](assets/images/readme14.png)
 
 #### About section
 
 This section provides detailed information on the gym, explaining what the gym can offer to its members, listing multiple reasons why to choose to become a member, prefering it over competition, and strongly underlining what the gym believes in.
 As the opening section is very dramatic this was kept simple so the reader is not distracted from the text. I went for a white background to achieve this, as well as the same font for headings and paragraphs.
+![About section](assets/images/readme2.png)
 
 #### Register section
 
 I liked the idea of having a background image which was fairly muted in terms of the choices of colours and I think this image was perfect. Also it leads nicely onto the register form, which I kept very simple but still functional. The register section makes sure that users complete all mandatory fields before submission enabling good customer communication and Gym feedback.
+![Register section](assets/images/readme4.png)
 
 
 ## Testing
@@ -92,64 +101,12 @@ I liked the idea of having a background image which was fairly muted in terms of
 ### Validation Testing
 
 1. [CSS Validator with CSS Portal](https://www.cssportal.com/css-validator/)
-   - this resulted in 4 errors
-   - error 1: Unexpected token '2500x' at line 203, col 13.
-     height: 2500x;
-   - error 2: Unexpected token '2500x' at line 239, col 13.
-     height: 2500x;
-   - error 3: Unexpected token '2500x' at line 274, col 13.
-     height: 2500x;
-   - error 4:  Unexpected token '500x' at line 414, col 13.
-     height: 500x;
+   
 
 2. [HTML Validator with Free Formatter](https://www.freeformatter.com/html-validator.html)
-   - on index.html 2 errors found:
-         - End tag “section” seen, but there were open elements.
-        From line 69, column 5 to line 69, column 14
-        Code Extract:
-        /div>↩ </section>↩
-         - Unclosed element “div”.
-        From line 57, column 9 to line 57, column 39
-        Code Extract: div id of frontimage-container
+   
 
-   - on setup.html; no errors found
-
-   - on course.html; no errors found
-
-   - on community.html; 5 errors found:
-   -
-      - Text not allowed in element iframe in this context.
-        From line 92, column 172 to line 92, column 175
-        Code Extract:
-        rogramme"Code↩
-      - Text not allowed in element “iframe” in this context.
-        From line 93, column 1 to line 93, column 66
-        Code Extract:
-        mme">Code Institute - Take Control and Change Career</ifr
-      - Duplicate ID “iframe-1”.
-        From line 97, column 17 to line 99, column 153
-        Code Extract:
-        iframe class="youtube-video" id="iframe-1" src="https://www.youtube.com/embed/pBxeVPMg77g"↩ title="Code Institute - What is Imposter Syndrome?"↩ aria-    label="A video where we speak to Dr Kara McGann in which she tells us about Impostor Syndrome and how best to cope with it"What↩
-      - Text not allowed in element “iframe” in this context.
-        From line 99, column 154 to line 99, column 157
-        Code Extract:
-        with it"What↩
-      - Text not allowed in element “iframe” in this context.
-        From line 100, column 1 to line 100, column 45
-        Code Extract:
-        it">What is Imposter Syndrome?</ifr
-
-- on contact.html; 1 error found:
-      - The “for” attribute of the “label” element must refer to a non-hidden form control.
-        From line 85, column 21 to line 85, column 52
-        Code Extract:
-        label for="contact-permission"↩
-
-- on form-feedback.html no errors found
-
-- on 404.html no errors found
-
-I also used the [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) following the use of the above 2 validators; I was having a lot of issues getting the W3C validators to work originally hence the use of different validators originally.  For thoroughness sake I did run the code through these validators and it found 1 error in CSS on line 161 showing opacity: 1s.
+For thouroughness sake, I also used the [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) following the use of the above two validators.
 
 ### Cross Browser and Cross Device Testing
 
@@ -211,7 +168,6 @@ I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluat
 
 ### Acknowledgments
 
-  
 - I want to acknowledge my mentor Richard Williams, who has challenged me and provided insight into some issues I faced. His help and support has been invaluable to me, especially at the start of the project when I was suffering from Imposter Syndrome and he was able to guide me through the process and make me believe in my abilities again. I have quickly learnt with Richard that he will not simply give me the answers but will be a guiding light in times of need!
 - I used [W3Schools](https://www.w3schools.com/html/html_forms.asp) as a general guide throughout, and it has proven helpful when I have encountered problems or simply for the times I wanted to add different elements within my project and didn't know how to.
 - The format of this README file came from the Code Institute.
