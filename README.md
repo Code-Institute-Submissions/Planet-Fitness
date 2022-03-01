@@ -1,4 +1,4 @@
-# planet-fitness-portfolio-project-1
+# Planet Fitness
 
 ## Author
 
@@ -75,6 +75,7 @@ I used the Raleway font to add to the strong and clean feel of the site. I wante
 #### Footer section
 
 I made the footer really simple, with a plain black background and orange clickable icons in contrast so as to be clear this was less important than the header and content of the website. I added a Facebook, Twitter, Instagram and Youtube link to each of the correspondent icon.
+Above the footer I embedded a google maps, which is set of course to a random location, so the user can easily figure out where the gym is sited. 
 
 #### About section
 
