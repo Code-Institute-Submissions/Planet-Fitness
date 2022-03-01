@@ -1,7 +1,7 @@
 # Planet Fitness
 
 
-## Objective
+## Introduction
 
 Planet Fitness is a front-end project for a responsive Gym website using HTML and CSS, experimenting with new fonts and styles. 
 The website was designed to be simple and non fussy, it uses a one-page format, which makes it especially easy to navigate on mobile. An efficient and non fussy website will attract new menbers who would otherwise timeout trying to navigate a complicated website.
@@ -11,7 +11,7 @@ Most Gym users are researching classes and availability during a busy day at wor
 The gym is interested in attracting and retaining members: the site's users are potential members, who want to know more about the gym and its procedures.
 The different sections of the website provide welcoming images of the Gym.
 The website promotes the image of a professional well run Gym.
-![Responsive](assets/images/readme12.png)![Responsive](assets/images/readme13.png)
+![Responsive](docs/images/responsive_home.png)![Responsive](docs/images/responsive_home2.png)
 
 ***
 
@@ -33,7 +33,7 @@ The website promotes the image of a professional well run Gym.
 
 I used HTML Color Codes for Hex colours. I opted for a combination of contrasting colours for all the different elements and sections of the website, so that the text and images would stand out clearly against the background. I used dark colours, such as #000 and #333, for most of the sections' backgrounds and #fff and #ff9f1a for details, such as borders and text.
 I used the colour picker to choose the hover colour on the button for the contact form. I wanted the colour to compliment the images I used for the different sections.
-![Colours](assets/images/readme9.png)
+![Colours](docs/images/services_section.png)
 
 #### Typography
 
@@ -52,33 +52,33 @@ It was important to me that the site didn't become too cumbersome, so most of th
 Finally, when navigating the website on a mobile phone, at a certain screen width, the menu items disappear and turn into a clickable hamburger menu, which turns orange when hovered on as well.
 Multiple identical hover effects are added throughout the website, for example in both the services and trainers section.
 All the pictures have a responsive design for smaller screen sizes, ultimately placing them one on top of another other, which gives a cleaner layout than having the picture next to each other.
-![Hover](assets/images/readme5.png)![Hover](assets/images/readme6.png)![Hover](assets/images/readme7.png)![Hover](assets/images/readme8.png)
-![Menu](assets/images/readme10.png)![Menu](assets/images/readme11.png)
+![Hover]()![Hover](docs/images/hover2.png)![Hover](docs/images/hover1.png)
+![Menu](docs/images/hamburger_menu.png)![Menu](docs/images/responsive_menu.png.png)
 
 ### Features
 
 #### Home section
 
 I used the Raleway font to add to the strong and clean feel of the site. I wanted an image behind the text to aid visual impact and chose a quite neutral image in terms of colour, as it is almost entirley black. I want the text to be wide and brief so that it did not overlay the image too much, leaving it clearly visible behind it. I had originally started with a different image but the colours were too colorful and made both the header and the text not prominent enough, detracting from the overall look I was going for.I wanted to make this concisive, with an image that is relevant to the title of the site. I added the zoom-in of the image and the text fade-in to make it more engaging.
-![Home section](assets/images/readme1.png)
+![Home section](docs/images/home_section.png)
 
 #### Footer section
 
 I made the footer really simple, with a plain black background and orange clickable icons in contrast so as to be clear this was less important than the header and content of the website. I added a Facebook, Twitter, Instagram and Youtube link to each of the correspondent icon.
 Above the footer I embedded a google maps, which is set of course to a random location, so the user can easily figure out where the gym is sited. I also added a box on the top right of the map containing the gym's phone number and hours of operation and decorated each voice with an icon.
-![Footer section](assets/images/readme3.png)
-![Map](assets/images/readme14.png)
+![Footer section](docs/images/footer_section.png)
+![Map](docs/images/google_maps.png)
 
 #### About section
 
 This section provides detailed information on the gym, explaining what the gym can offer to its members, listing multiple reasons why to choose to become a member, prefering it over competition, and strongly underlining what the gym believes in.
 As the opening section is very dramatic this was kept simple so the reader is not distracted from the text. I went for a white background to achieve this, as well as the same font for headings and paragraphs.
-![About section](assets/images/readme2.png)
+![About section](docs/images/about_section.png)
 
 #### Register section
 
 I liked the idea of having a background image which was fairly muted in terms of the choices of colours and I think this image was perfect. Also it leads nicely onto the register form, which I kept very simple but still functional. The register section makes sure that users complete all mandatory fields before submission enabling good customer communication and Gym feedback.
-![Register section](assets/images/readme4.png)
+![Register section](docs/images/register_section.png)
 
 
 ## Testing
@@ -99,7 +99,7 @@ I have inputted various formats of data into the form on the contact page, and t
 I've tested all the anchor elements for external links and ensured they open in a new browser tab.  I've also tested the internal anchor elements and ensured they go to the relevant pages within the site.
 I've manually tested the user requirements as outlined in [Overall User Experience](#Overall-User-Experience).
 I've ran my site through Lighthouse's audit [Web Dev](https://web.dev.measure/) and the results are below:
-![Lighthouse](assets/images/img16.png)
+![Lighthouse](docs/images/lighthouse.png)
 
 
 ### Accessibility
@@ -108,6 +108,18 @@ I ran my site through [Web Accessibility](https://www.webaccessibility.com/) sho
 
 I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluation tool and it is showing all okay.
 ***
+
+### Deployment
+
+1. Go to the depository in Github
+
+2. Go to Settings by clicking the cog icon next to 'Settings'
+
+3. Click on the Pages left menu
+
+4. Click on drop down menu in Sources and select 'Main'
+
+5. Click save and presented with Success message and deployed URL
 
 
 ## Languages 
