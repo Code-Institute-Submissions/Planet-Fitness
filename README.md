@@ -31,7 +31,7 @@ The website promotes the image of a professional well run Gym.
 
 #### Colours
 
-I used a combination of contrasting colours so that the text and images would stand out clearly against the background. I used dark colours, such as #000 and #333, for most of the sections' backgrounds and #fff and #ff9f1a for details, such as borders and text.
+I used HTML Color Codes for Hex colours. I opted for a combination of contrasting colours for all the different elements and sections of the website, so that the text and images would stand out clearly against the background. I used dark colours, such as #000 and #333, for most of the sections' backgrounds and #fff and #ff9f1a for details, such as borders and text.
 I used the colour picker to choose the hover colour on the button for the contact form. I wanted the colour to compliment the images I used for the different sections.
 ![Colours](assets/images/readme9.png)
 
@@ -42,11 +42,11 @@ I used [Google Fonts](https://fonts.google.com/) for the font [Raleway](https://
 
 #### Images
 
-I was inspired by the use of [Font Awesome Icons](https://fontawesome.com/icons) in the Love Running Project section of the course, so I decided to make each of the list items of the about section more eye-catching with a relevant icon, copying the HTML code for each icon before posting it into the relevant text. All the images I used for my project were taken from [Pexels](https://www.pexels.com/) and [Unsplah](https://unsplash.com/). I tried to use images which had orange and black elements to compliment the site's colour palette choices.
+I was inspired by the use of [Font Awesome Icons](https://fontawesome.com/icons), so I decided to make each of the list items of the about section more eye-catching with a relevant icon, copying the HTML code for each icon before posting it into the relevant text. All the images I used for my project were taken from [Pexels](https://www.pexels.com/) and [Unsplah](https://unsplash.com/). I tried to use images which had orange and black elements to compliment the site's colour palette choices.
 
 #### Animations and Transitions
 
-When you first open the home page the background image zooms in slightly, which adds a fun element and draws the viewers eye to the image and text within the image. I learnt how to do this whilst doing the Love Running Project within the course and used those learnt skills to implement it in my own project. The home section is also provided of a button, which links the user directly to the register section, with a motivational text rather than "join us" or "register", to give the user a more inspiring and intriguing feel right from the beginning. I made the button turn orange when hovered on; I am very interested in what CSS can offer in terms of interactivity and I felt it added a pleasing visual to the navigation experience.
+When you first open the home page the background image zooms in slightly, which adds a fun element and draws the viewers eye to the image and text within the image. The home section is also provided of a button, which links the user directly to the register section, with a motivational text rather than "join us" or "register", to give the user a more inspiring and intriguing feel right from the beginning. I made the button turn orange when hovered on; I am very interested in what CSS can offer in terms of interactivity and I felt it added a pleasing visual to the navigation experience.
 I want the menu to have a contemporary feel; to achieve this I provided each menu item with a hover effect, to highlight what menu page you can select before you have selected it.
 It was important to me that the site didn't become too cumbersome, so most of the content was added in the about section, whilst all of the other sections are provided with specific buttons which link the user to the about page to learn more about everything there is to know about the gym. All buttons are provided with the same hover effect.
 Finally, when navigating the website on a mobile phone, at a certain screen width, the menu items disappear and turn into a clickable hamburger menu, which turns orange when hovered on as well.
@@ -101,8 +101,6 @@ I've manually tested the user requirements as outlined in [Overall User Experien
 I've ran my site through Lighthouse's audit [Web Dev](https://web.dev.measure/) and the results are below:
 ![Lighthouse](assets/images/img16.png)
 
-### Bugs
-
 
 ### Accessibility
 
@@ -111,10 +109,6 @@ I ran my site through [Web Accessibility](https://www.webaccessibility.com/) sho
 I also ran it through [Wave](https://wave.webaim.org/) Web accessibility evaluation tool and it is showing all okay.
 ***
 
-## Deployment
-
-
-***
 
 ## Languages 
 
